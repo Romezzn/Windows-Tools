@@ -542,20 +542,16 @@ goto inicio
 
 :test
 echo Descargando Unpark CPU
-bitsadmin /transfer 7z /download /priority normal ^
-  "https://github.com/Romezzn/Windows-Tools/raw/db4e6c3ee748152841b0ec790a96a43d8eeb0e8e/7z.exe" "%temp%\7z.exe"
+bitsadmin /transfer Unpark-CPU /download /priority normal ^
+  "https://github.com/Romezzn/Windows-Tools/raw/e57947edf712b5b34c628eb53c0313180c643c9e/UCpu.exe" "%temp%\UCpu.exe"
 
-bitsadmin /transfer UnparkCPU /download /priority normal ^
-  "https://coderbag.com/assets/downloads/disable-cpu-core-parking/Unpark-CPU-App.zip" "%temp%\UPCPU.zip"
+echo Se ha finalizado la descarga del programa - Unpark CPU
+pause
 cls
-echo Se ha finalizado la descarga del programa - Unpark CPU ^[ULTIMA VERSIÓN^]
+Start %temp%\UCpu.exe
+echo Presiona cualquier tecla para eliminar los archivos y continuar
 pause
-%temp%\7z.exe /e UPCPU.zip
-echo Se ha descomprimido
-pause
-Start %temp%\UnparkCpu.exe
-del /f /q "%temp%\UPCPU.zip" 1>nul 2>nul
-del /f /q "%temp%\UnparkCpu.exe" 1>nul 2>nul
+del /f /q "%temp%\UCpu.exe" 1>nul 2>nul
 cls
 echo Se han eliminado los archivos descargados
 pause
