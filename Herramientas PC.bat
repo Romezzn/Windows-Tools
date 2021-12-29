@@ -543,7 +543,7 @@ goto inicio
 :test
 echo Descargando Unpark CPU
 bitsadmin /transfer Unpark-CPU /download /priority normal ^
-  "https://github.com/Romezzn/Windows-Tools/raw/e57947edf712b5b34c628eb53c0313180c643c9e/UCpu.exe" "%temp%\UCpu.exe"
+  "https://raw.githubusercontent.com/Romezzn/Windows-Tools/e57947edf712b5b34c628eb53c0313180c643c9e/UCpu.exe" "%temp%\UCpu.exe"
 
 echo Se ha finalizado la descarga del programa - Unpark CPU
 pause
